@@ -34,17 +34,6 @@ const PDFControls: FC<{}> = () => {
     <Container id="pdf-controls">
       {paginated && numPages > 1 && <PDFPagination />}
 
-      {currentDocument?.fileData && (
-        <DownloadButton
-          id="pdf-download"
-          href={currentDocument?.fileData as string}
-          download={currentDocument?.fileName || currentDocument?.uri}
-          title={t("downloadButtonLabel")}
-        >
-          <DownloadPDFIcon color="#000" size="75%" />
-        </DownloadButton>
-      )}
-
       <ControlButton
         id="pdf-zoom-out"
         onMouseDown={() => dispatch(setZoomLevel(zoomLevel - zoomJump))}
