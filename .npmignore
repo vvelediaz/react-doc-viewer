@@ -1,10 +1,11 @@
+/.github
 /.vscode
 /.storybook
-/.github
 /demo
 /public
 /src
 /storybook-static
+/use-cases
 .nvmrc
 .release-it.json
 .eslintignore

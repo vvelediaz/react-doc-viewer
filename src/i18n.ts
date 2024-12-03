@@ -25,8 +25,11 @@ export const locales = {
   sr_cyr,
   ja,
   ru,
-  se
+  se,
 };
 
+export const supportedLanguages = Object.keys(locales);
+
 export type AvailableLanguages = keyof typeof locales;
+
 export const defaultLanguage: AvailableLanguages = "en";

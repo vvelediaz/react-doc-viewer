@@ -1,3 +1,4 @@
+import "core-js/proposals/promise-with-resolvers";
 import React, { CSSProperties, forwardRef, memo } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { HeaderBar } from "./components/HeaderBar";
@@ -64,7 +65,6 @@ export default memo(DocViewer);
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   background: #ffffff;
   width: 100%;
   height: 100%;
