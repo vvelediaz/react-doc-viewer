@@ -6,7 +6,7 @@ import {
   updateCurrentDocument,
 } from "../store/actions";
 import { IMainState } from "../store/mainStateReducer";
-import { DocRenderer } from "..";
+import { DocRenderer } from "../models";
 import {
   defaultFileLoader,
   FileLoaderComplete,
