@@ -1,4 +1,4 @@
-import { DocRenderer, IConfig, IDocument } from "..";
+import { DocRenderer, IConfig, IDocument } from "../models";
 import {
   MainStateActions,
   NEXT_DOCUMENT,
