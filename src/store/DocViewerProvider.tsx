@@ -7,7 +7,7 @@ import React, {
   useImperativeHandle,
   forwardRef,
 } from "react";
-import { DocViewerRef } from "..";
+import { DocViewerRef } from "../models";
 import { DocViewerProps } from "../DocViewer";
 import { defaultLanguage, locales } from "../i18n";
 import {
