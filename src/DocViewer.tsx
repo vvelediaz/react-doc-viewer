@@ -30,7 +30,9 @@ export interface DocViewerProps {
   onDocumentChange?: (document: IDocument) => void;
 }
 
-const DocViewer = forwardRef<DocViewerRef, DocViewerProps>((props, ref) => {
+const DocViewer: React.ForwardRefExoticComponent<
+  React.PropsWithoutRef<DocViewerProps> & React.RefAttributes<DocViewerRef>
+> = forwardRef<DocViewerRef, DocViewerProps>((props, ref) => {
   const { documents, theme } = props;
 
   if (!documents) {
@@ -60,7 +62,9 @@ const DocViewer = forwardRef<DocViewerRef, DocViewerProps>((props, ref) => {
   );
 });
 
-export default memo(DocViewer);
+export const MemoizedDocViewer: React.NamedExoticComponent<
+  React.PropsWithoutRef<DocViewerProps> & React.RefAttributes<DocViewerRef>
+> = memo(DocViewer);
 
 const Container = styled.div`
   display: flex;
