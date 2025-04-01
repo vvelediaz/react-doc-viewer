@@ -1,4 +1,4 @@
-import { ITheme } from ".";
+import { ITheme } from "./models";
 
 export const defaultTheme: ITheme = {
   primary: "#fff",
