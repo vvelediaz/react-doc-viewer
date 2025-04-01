@@ -3,7 +3,7 @@
 import { FC, useContext } from "react";
 import styled from "styled-components";
 import { DocViewerContext } from "../store/DocViewerProvider";
-import { IStyledProps } from "..";
+import { IStyledProps } from "../models";
 import { getFileName } from "../utils/getFileName";
 
 export const FileName: FC = () => {
