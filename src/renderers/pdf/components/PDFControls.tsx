@@ -1,12 +1,11 @@
 import React, { FC, useContext } from "react";
 import styled from "styled-components";
-import { Button, LinkButton } from "../../../components/common";
+import { Button } from "../../../components/common";
 import { IStyledProps } from "../../..";
 import { PDFContext } from "../state";
 import { setPDFPaginated, setZoomLevel } from "../state/actions";
 import { useTranslation } from "../../../hooks/useTranslation";
 import {
-  DownloadPDFIcon,
   ResetZoomPDFIcon,
   TogglePaginationPDFIcon,
   ZoomInPDFIcon,
@@ -91,15 +90,6 @@ const Container = styled.div`
 `;
 
 const ControlButton = styled(Button)`
-  width: 30px;
-  height: 30px;
-  @media (max-width: 768px) {
-    width: 25px;
-    height: 25px;
-  }
-`;
-
-const DownloadButton = styled(LinkButton)`
   width: 30px;
   height: 30px;
   @media (max-width: 768px) {
