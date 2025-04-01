@@ -4,7 +4,7 @@ import { FC, useContext } from "react";
 import styled from "styled-components";
 import { DocViewerContext } from "../store/DocViewerProvider";
 import { nextDocument, previousDocument } from "../store/actions";
-import { IStyledProps } from "..";
+import { IStyledProps } from "../models";
 import { ButtonSecondary } from "./common/Button";
 import { NextDocIcon, PrevDocIcon } from "./icons";
 import { useTranslation } from "../hooks/useTranslation";
