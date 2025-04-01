@@ -1,4 +1,4 @@
-import { IDocument } from "..";
+import { IDocument } from "../models";
 
 export const getFileName = (
   document: IDocument | undefined,
